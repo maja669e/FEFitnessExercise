@@ -11,14 +11,14 @@ public class Main {
 
         //Employees
         List<Employee> employees = new ArrayList<>();
-        Employee employee = new Employee("Claus", "221175-1011", 37, 23000);
-        Employee employee2 = new Employee("Tove", "011080-1014", 20, 9120);
-        Employee employee3 = new Employee("Anna", "011080-1012", 37, 23000);
-        Employee employee4 = new Employee("Henning", "011080-1014", 15, 6840);
-        employees.add(employee);
-        employees.add(employee2);
-        employees.add(employee3);
-        employees.add(employee4);
+        Administration administration = new Administration("Claus", "221175-1011", 37, 23000, 5);
+        Instructor instructor = new Instructor("Tove", "011080-1014", 20, 9120, 0);
+        Administration administration2 = new Administration("Anna", "011080-1012", 37, 23000, 5);
+        Instructor instructor2 = new Instructor("Henning", "011080-1014", 15, 6840, 0);
+        employees.add(administration);
+        employees.add(instructor);
+        employees.add(administration2);
+        employees.add(instructor2);
 
 
         for (int i = 0; i < employees.size(); i++) {
@@ -46,10 +46,10 @@ public class Main {
 
         //Persons
         List<Person> persons = new ArrayList<>();
-        persons.add(employee);
-        persons.add(employee2);
-        persons.add(employee3);
-        persons.add(employee4);
+        persons.add(administration);
+        persons.add(administration2);
+        persons.add(instructor);
+        persons.add(instructor2);
         persons.add(member);
         persons.add(member2);
         persons.add(member3);

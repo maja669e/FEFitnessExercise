@@ -4,11 +4,13 @@ public class Employee extends Person {
 
     private int hours;
     private int salary;
+    private int vacation;
 
-    public Employee(String name, String cpr, int hours, int salary) {
+    public Employee(String name, String cpr, int hours, int salary, int vacation) {
         super(name, cpr);
         this.hours = hours;
         this.salary = salary;
+        this.vacation = vacation;
     }
 
 
@@ -36,6 +38,7 @@ public class Employee extends Person {
                 ", cpr=" + cpr +
                 ", hours='" + hours + '\'' +
                 ", salary=" + salary +
+                ", vacation=" + vacation +
                 '}';
     }
 }
